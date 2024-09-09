@@ -23,6 +23,7 @@ CLASS_ID_TO_NAME = {
 }
 
 @app.route('/test', methods=['GET'])
+def test():
     return "Hello world"
 
 @app.route('/detect', methods=['POST'])
