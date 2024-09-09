@@ -22,6 +22,9 @@ CLASS_ID_TO_NAME = {
     4: "tomato_cracking"
 }
 
+@app.route('/test', methods=['GET'])
+    return "Hello world"
+
 @app.route('/detect', methods=['POST'])
 def detect():
     if 'image' not in request.files:
